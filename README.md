@@ -61,4 +61,4 @@ This project is configured for automatic deployment to GitHub Pages via GitHub A
 
 ---
 
-Built with ❤️ and passion
+Built with ❤️ and passion.
