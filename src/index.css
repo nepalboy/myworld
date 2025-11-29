@@ -1,19 +1,19 @@
 :root {
   /* Colors - Dark theme with vibrant accents */
-  --primary: #6366f1;
-  /* Indigo */
+  --primary: #8b5cf6;
+  /* Violet 500 */
   --secondary: #ec4899;
-  /* Pink */
+  /* Pink 500 */
   --accent: #f59e0b;
-  /* Amber */
+  /* Amber 500 */
   --background: #0f172a;
-  /* Dark slate */
+  /* Slate 900 */
   --surface: #1e293b;
   /* Slate 800 */
   --surface-light: #334155;
   /* Slate 700 */
-  --text: #f1f5f9;
-  /* Slate 100 */
+  --text: #f8fafc;
+  /* Slate 50 */
   --text-secondary: #cbd5e1;
   /* Slate 300 */
   --white: #ffffff;
@@ -21,6 +21,7 @@
   /* Gradients */
   --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
   --gradient-accent: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+  --gradient-dark: linear-gradient(to bottom, var(--background), #1e1b4b);
 
   /* Spacing */
   --spacing-xs: 0.5rem;
@@ -41,7 +42,7 @@
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-  --shadow-glow: 0 0 30px rgba(99, 102, 241, 0.3);
+  --shadow-glow: 0 0 30px rgba(139, 92, 246, 0.3);
 }
 
 * {

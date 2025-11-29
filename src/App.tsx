@@ -8,14 +8,16 @@ function App() {
       description: 'A personal travel blog featuring adventures from around the world. Explore stories from concerts, high-altitude hikes, and diverse cultural experiences across continents.',
       tags: ['Travel', 'Blog', 'Adventures', 'Photography'],
       url: 'https://nepalboy.github.io/Travelnew/#/',
-      icon: '🌍'
+      icon: '🌍',
+      image: 'https://lh7-rt.googleusercontent.com/docsz/AD_4nXcOdgrNratZDgXqn6MfCsMopcCNVsJOISnfijo7MV1IMK6OFXACj32egHGEjj9xZbeKN0soMPUliFG9n47Q733WHO-55ARytS0rJ7HiHwyo50QkUXVrVanNl90Uxp81FyG8KK3LbA?key=RG9KWpZ8wPjWWIcXoGdZIEc4'
     },
     {
       title: 'MedicSec',
       description: 'A comprehensive platform for building safe and secure medical devices. Integrating processes, people, and technologies to ensure the highest standards of medical device security and safety.',
       tags: ['Medical Devices', 'Security', 'Healthcare', 'Platform'],
       url: 'https://www.medicsec.com/',
-      icon: '🔒'
+      icon: '🔒',
+      image: '/medicsec-preview.png'
     }
   ];
 
@@ -26,7 +28,7 @@ function App() {
         <div className="hero-content">
           <h1>MyWorld</h1>
           <p className="hero-tagline">
-            Collections of Things I Love and Enjoy
+            Welcome, thank you for being here and being part of my journey
           </p>
           <a href="#projects" className="hero-cta">
             Explore My Projects
@@ -54,6 +56,7 @@ function App() {
               tags={project.tags}
               url={project.url}
               icon={project.icon}
+              image={project.image}
             />
           ))}
         </div>

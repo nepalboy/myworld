@@ -13,7 +13,7 @@
   justify-content: center;
   text-align: center;
   padding: var(--spacing-2xl) var(--spacing-lg);
-  background: var(--gradient-primary);
+  background: var(--gradient-dark);
   overflow: hidden;
 }
 
@@ -25,8 +25,8 @@
   right: 0;
   bottom: 0;
   background:
-    radial-gradient(circle at 20% 50%, rgba(236, 72, 153, 0.2) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(99, 102, 241, 0.2) 0%, transparent 50%);
+    radial-gradient(circle at 20% 50%, rgba(236, 72, 153, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.15) 0%, transparent 50%);
   animation: pulse 8s ease-in-out infinite;
 }
 
@@ -35,33 +35,38 @@
   0%,
   100% {
     opacity: 1;
+    transform: scale(1);
   }
 
   50% {
-    opacity: 0.8;
+    opacity: 0.7;
+    transform: scale(1.1);
   }
 }
 
 .hero-content {
   position: relative;
   z-index: 1;
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .hero h1 {
-  font-size: 4.5rem;
-  margin-bottom: var(--spacing-md);
-  background: linear-gradient(to right, var(--white), var(--text-secondary));
+  font-size: 5rem;
+  margin-bottom: var(--spacing-lg);
+  background: linear-gradient(to right, var(--white) 30%, var(--text-secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   animation: fadeInUp 0.8s ease-out;
+  letter-spacing: -0.02em;
 }
 
 .hero-tagline {
-  font-size: 1.5rem;
-  color: var(--text);
-  margin-bottom: var(--spacing-xl);
+  font-size: 1.75rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-2xl);
+  font-weight: 300;
+  line-height: 1.4;
   animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
