@@ -104,8 +104,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: var(--spacing-sm) var(--spacing-lg);
-  margin-top: 60px;
+  padding: var(--spacing-xs) var(--spacing-lg);
+  margin-top: 50px;
   background: var(--gradient-dark);
   overflow: hidden;
 }
@@ -144,8 +144,8 @@
 }
 
 .hero-title {
-  font-size: 4rem;
-  margin-bottom: var(--spacing-md);
+  font-size: 2.8rem;
+  margin-bottom: var(--spacing-xs);
   background: linear-gradient(to right, var(--white) 30%, var(--text-secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -155,11 +155,11 @@
 }
 
 .hero-tagline {
-  font-size: 1.75rem;
+  font-size: 1.05rem;
   color: var(--text-secondary);
-  margin-bottom: var(--spacing-2xl);
-  font-weight: 300;
-  line-height: 1.4;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
   animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
@@ -212,7 +212,7 @@
 
 /* Projects Section */
 .projects-section {
-  padding: var(--spacing-lg) var(--spacing-lg);
+  padding: var(--spacing-md) var(--spacing-lg);
   background: var(--background);
 }
 
