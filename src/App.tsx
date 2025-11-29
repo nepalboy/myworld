@@ -1,6 +1,7 @@
 import './App.css';
 import ProjectCard from './components/ProjectCard';
 import About from './components/About';
+import GallerySection from './components/GallerySection';
 
 function App() {
   const projects = [
@@ -45,7 +46,7 @@ function App() {
         <div className="nav-content">
           <h1 className="nav-logo">OurWorld</h1>
           <div className="nav-links">
-            <a href="#projects" className="nav-link">Projects</a>
+            <a href="#projects" className="nav-link">My Collections</a>
             <a href="#about" className="nav-link">About</a>
           </div>
         </div>
@@ -86,6 +87,9 @@ function App() {
 
       {/* About Section */}
       <About />
+
+      {/* Gallery Section */}
+      <GallerySection />
 
       {/* Footer */}
       <footer className="footer">
