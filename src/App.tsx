@@ -1,9 +1,72 @@
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import ProjectCard from './components/ProjectCard';
 import About from './components/About';
 import GallerySection from './components/GallerySection';
 
 function App() {
+  return (
+    <Router>
+      <div className="app">
+        {/* Navigation Header */}
+        <nav className="navbar">
+          <div className="nav-content">
+            <h1 className="nav-logo">OurWorld</h1>
+            <div className="nav-links">
+              <Link to="/" className="nav-link">Home</Link>
+              <Link to="/collections" className="nav-link">My Collections</Link>
+              <Link to="/about" className="nav-link">About</Link>
+              <Link to="/gallery" className="nav-link">Pictures</Link>
+            </div>
+            <img src="/avatar.jpg" alt="Profile" className="nav-avatar" />
+          </div>
+        </nav>
+
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/collections" element={<CollectionsPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
+        </Routes>
+
+        {/* Footer */}
+        <footer className="footer">
+          <div className="footer-content">
+            <p>&copy; 2025 OurWorld. Built with passion and code.</p>
+            <div className="footer-links">
+              <a href="https://nepalboy.github.io/Travelnew/#/" target="_blank" rel="noopener noreferrer" className="footer-link">
+                Travel Blog
+              </a>
+              <a href="https://www.medicsec.com/" target="_blank" rel="noopener noreferrer" className="footer-link">
+                MedicSec
+              </a>
+              <a href="https://www.amazon.com/Hope-Foothills-Himalayas-education-immigration/dp/1801287775" target="_blank" rel="noopener noreferrer" className="footer-link">
+                The Hope
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </Router>
+  );
+}
+
+// Home Page
+function HomePage() {
+  return (
+    <section className="hero">
+      <div className="hero-content">
+        <h2 className="hero-title">Welcome</h2>
+        <p className="hero-tagline">
+          Thank you for being here and being part of my journey
+        </p>
+      </div>
+    </section>
+  );
+}
+
+// Collections Page
+function CollectionsPage() {
   const projects = [
     {
       title: 'Traversing With Time',
@@ -25,7 +88,7 @@ function App() {
       title: 'Picture Speaks',
       description: 'A curated collection of moments frozen in time. Explore 40+ photos from my adventures - from the peaks of Kilimanjaro to the streets of Nepal, featuring food, places, and thrilling activities.',
       tags: ['Photography', 'Gallery', 'Travel', 'Memories'],
-      url: 'https://nepalboy.github.io/myworld/',
+      url: '#/gallery',
       icon: '📸',
       image: '/images/Nepal_Trolleybus_Tripureswore_1985.jpg'
     },
@@ -40,76 +103,38 @@ function App() {
   ];
 
   return (
-    <div className="app">
-      {/* Navigation Header */}
-      <nav className="navbar">
-        <div className="nav-content">
-          <h1 className="nav-logo">OurWorld</h1>
-          <div className="nav-links">
-            <a href="#projects" className="nav-link">My Collections</a>
-            <a href="#about" className="nav-link">About</a>
-          </div>
-        </div>
-      </nav>
-
-      {/* Hero Section */}
-      <section className="hero">
-        <div className="hero-content">
-          <h2 className="hero-title">Welcome</h2>
-          <p className="hero-tagline">
-            Thank you for being here and being part of my journey
-          </p>
-        </div>
-      </section>
-
-      {/* Projects Section */}
-      <section id="projects" className="projects-section">
-        <div className="section-header">
-          <h2 className="section-title">My Collections</h2>
-          <p className="section-subtitle">
-            A showcase of my passions - travel, security, photography, and storytelling
-          </p>
-        </div>
-        <div className="projects-grid">
-          {projects.map((project, index) => (
-            <ProjectCard
-              key={index}
-              title={project.title}
-              description={project.description}
-              tags={project.tags}
-              url={project.url}
-              icon={project.icon}
-              image={project.image}
-            />
-          ))}
-        </div>
-      </section>
-
-      {/* About Section */}
-      <About />
-
-      {/* Gallery Section */}
-      <GallerySection />
-
-      {/* Footer */}
-      <footer className="footer">
-        <div className="footer-content">
-          <p>&copy; 2025 OurWorld. Built with passion and code.</p>
-          <div className="footer-links">
-            <a href="https://nepalboy.github.io/Travelnew/#/" target="_blank" rel="noopener noreferrer" className="footer-link">
-              Travel Blog
-            </a>
-            <a href="https://www.medicsec.com/" target="_blank" rel="noopener noreferrer" className="footer-link">
-              MedicSec
-            </a>
-            <a href="https://www.amazon.com/Hope-Foothills-Himalayas-education-immigration/dp/1801287775" target="_blank" rel="noopener noreferrer" className="footer-link">
-              The Hope
-            </a>
-          </div>
-        </div>
-      </footer>
-    </div>
+    <section id="projects" className="projects-section">
+      <div className="section-header">
+        <h2 className="section-title">My Collections</h2>
+        <p className="section-subtitle">
+          A showcase of my passions - travel, security, photography, and storytelling
+        </p>
+      </div>
+      <div className="projects-grid">
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            title={project.title}
+            description={project.description}
+            tags={project.tags}
+            url={project.url}
+            icon={project.icon}
+            image={project.image}
+          />
+        ))}
+      </div>
+    </section>
   );
+}
+
+// About Page
+function AboutPage() {
+  return <About />;
+}
+
+// Gallery Page
+function GalleryPage() {
+  return <GallerySection />;
 }
 
 export default App;
