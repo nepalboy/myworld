@@ -18,7 +18,7 @@ Personal travel blog featuring adventures from around the world, including conce
 **Visit**: [https://nepalboy.github.io/Travelnew/#/](https://nepalboy.github.io/Travelnew/#/)
 
 ### MedicSec
-Cybersecurity solutions designed specifically for healthcare organizations, protecting patient data and medical systems.
+A comprehensive platform for building safe and secure medical devices, integrating processes, people, and technologies to ensure the highest standards of medical device security and safety.
 
 **Visit**: [https://www.medicsec.com/](https://www.medicsec.com/)
 

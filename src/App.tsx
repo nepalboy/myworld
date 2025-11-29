@@ -12,8 +12,8 @@ function App() {
     },
     {
       title: 'MedicSec',
-      description: 'Cybersecurity solutions designed specifically for healthcare organizations. Protecting patient data and medical systems with cutting-edge security technology.',
-      tags: ['Cybersecurity', 'Healthcare', 'Professional', 'Security'],
+      description: 'A comprehensive platform for building safe and secure medical devices. Integrating processes, people, and technologies to ensure the highest standards of medical device security and safety.',
+      tags: ['Medical Devices', 'Security', 'Healthcare', 'Platform'],
       url: 'https://www.medicsec.com/',
       icon: '🔒'
     }
