@@ -1,7 +1,5 @@
 import './App.css';
 import ProjectCard from './components/ProjectCard';
-import BookSection from './components/BookSection';
-import GallerySection from './components/GallerySection';
 
 function App() {
   const projects = [
@@ -20,38 +18,54 @@ function App() {
       url: 'https://www.medicsec.com/',
       icon: '🔒',
       image: '/medicsec-preview.png'
+    },
+    {
+      title: 'Picture Speaks',
+      description: 'A curated collection of moments frozen in time. Explore 40+ photos from my adventures - from the peaks of Kilimanjaro to the streets of Nepal, featuring food, places, and thrilling activities.',
+      tags: ['Photography', 'Gallery', 'Travel', 'Memories'],
+      url: '#gallery',
+      icon: '📸',
+      image: '/images/Nepal_Trolleybus_Tripureswore_1985.jpg'
+    },
+    {
+      title: 'The Hope',
+      description: 'A memoir from the Foothills of the Himalayas. The story of war, mood disorder, education, immigration, and hopes - from Nepal to the United States of America.',
+      tags: ['Book', 'Memoir', 'Nepal', 'Immigration'],
+      url: 'https://www.amazon.com/Hope-Foothills-Himalayas-education-immigration/dp/1801287775',
+      icon: '📖',
+      image: '/book-cover.png'
     }
   ];
 
   return (
     <div className="app">
+      {/* Navigation Header */}
+      <nav className="navbar">
+        <div className="nav-content">
+          <h1 className="nav-logo">OurWorld</h1>
+          <div className="nav-links">
+            <a href="#projects" className="nav-link">Projects</a>
+            <a href="#about" className="nav-link">About</a>
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>OurWorld</h1>
+          <h2 className="hero-title">Welcome</h2>
           <p className="hero-tagline">
-            Welcome, thank you for being here and being part of my journey
+            Thank you for being here and being part of my journey
           </p>
-          <div className="hero-actions">
-            <a href="#projects" className="hero-cta">
-              Projects
-            </a>
-            <a href="#mybook" className="hero-cta secondary">
-              My Book
-            </a>
-            <a href="#pictures" className="hero-cta secondary">
-              Gallery
-            </a>
-          </div>
         </div>
       </section>
 
       {/* Projects Section */}
       <section id="projects" className="projects-section">
         <div className="section-header">
-          <h2 className="section-title">My Projects</h2>
+          <h2 className="section-title">My Collections</h2>
           <p className="section-subtitle">
-            A showcase of my passions - from exploring the world to securing healthcare
+            A showcase of my passions - travel, security, photography, and storytelling
           </p>
         </div>
         <div className="projects-grid">
@@ -69,12 +83,6 @@ function App() {
         </div>
       </section>
 
-      {/* Book Section */}
-      <BookSection />
-
-      {/* Gallery Section */}
-      <GallerySection />
-
       {/* Footer */}
       <footer className="footer">
         <div className="footer-content">
@@ -85,6 +93,9 @@ function App() {
             </a>
             <a href="https://www.medicsec.com/" target="_blank" rel="noopener noreferrer" className="footer-link">
               MedicSec
+            </a>
+            <a href="https://www.amazon.com/Hope-Foothills-Himalayas-education-immigration/dp/1801287775" target="_blank" rel="noopener noreferrer" className="footer-link">
+              The Hope
             </a>
           </div>
         </div>
