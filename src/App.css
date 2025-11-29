@@ -70,12 +70,12 @@
 /* Hero Section */
 .hero {
   position: relative;
-  min-height: 60vh;
+  min-height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: var(--spacing-2xl) var(--spacing-lg);
+  padding: var(--spacing-xl) var(--spacing-lg);
   margin-top: 80px;
   background: var(--gradient-dark);
   overflow: hidden;

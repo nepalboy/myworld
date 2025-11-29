@@ -1,5 +1,6 @@
 import './App.css';
 import ProjectCard from './components/ProjectCard';
+import About from './components/About';
 
 function App() {
   const projects = [
@@ -14,7 +15,7 @@ function App() {
     {
       title: 'MedicSec',
       description: 'A comprehensive platform for building safe and secure medical devices. Integrating processes, people, and technologies to ensure the highest standards of medical device security and safety.',
-      tags: ['Medical Devices', 'Security', 'Healthcare', 'Platform'],
+      tags: ['Medical Devices', 'Security', 'Safety', 'Risk Management'],
       url: 'https://www.medicsec.com/',
       icon: '🔒',
       image: '/medicsec-preview.png'
@@ -23,7 +24,7 @@ function App() {
       title: 'Picture Speaks',
       description: 'A curated collection of moments frozen in time. Explore 40+ photos from my adventures - from the peaks of Kilimanjaro to the streets of Nepal, featuring food, places, and thrilling activities.',
       tags: ['Photography', 'Gallery', 'Travel', 'Memories'],
-      url: '#gallery',
+      url: 'https://nepalboy.github.io/myworld/',
       icon: '📸',
       image: '/images/Nepal_Trolleybus_Tripureswore_1985.jpg'
     },
@@ -33,7 +34,7 @@ function App() {
       tags: ['Book', 'Memoir', 'Nepal', 'Immigration'],
       url: 'https://www.amazon.com/Hope-Foothills-Himalayas-education-immigration/dp/1801287775',
       icon: '📖',
-      image: '/book-cover.png'
+      image: '/book-cover.jpg'
     }
   ];
 
@@ -82,6 +83,9 @@ function App() {
           ))}
         </div>
       </section>
+
+      {/* About Section */}
+      <About />
 
       {/* Footer */}
       <footer className="footer">

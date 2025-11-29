@@ -33,7 +33,6 @@ const ProjectCard = ({ title, description, tags, url, icon, image }: ProjectCard
                 </div>
                 <div className="card-footer">
                     <span className="visit-link">
-                        Visit Project
                         <svg
                             width="20"
                             height="20"
