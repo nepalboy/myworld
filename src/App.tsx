@@ -92,7 +92,7 @@ function HomePage() {
       <section className="hero">
         <div className="hero-content">
           <p className="hero-tagline">
-            Welcome, thank you for being here and being part of my journey
+            <strong className="welcome-word">Welcome,</strong> thank you for being here and being part of my journey
           </p>
         </div>
       </section>
