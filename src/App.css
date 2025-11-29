@@ -70,6 +70,14 @@
   animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
+.hero-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
 .hero-cta {
   display: inline-flex;
   align-items: center;
@@ -83,7 +91,11 @@
   font-size: 1.125rem;
   font-weight: 600;
   transition: all 0.3s ease;
-  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.hero-cta.secondary {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 .hero-cta:hover {

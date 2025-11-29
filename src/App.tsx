@@ -1,5 +1,7 @@
 import './App.css';
 import ProjectCard from './components/ProjectCard';
+import BookSection from './components/BookSection';
+import GallerySection from './components/GallerySection';
 
 function App() {
   const projects = [
@@ -26,16 +28,21 @@ function App() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>MyWorld</h1>
+          <h1>OurWorld</h1>
           <p className="hero-tagline">
             Welcome, thank you for being here and being part of my journey
           </p>
-          <a href="#projects" className="hero-cta">
-            Explore My Projects
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
-            </svg>
-          </a>
+          <div className="hero-actions">
+            <a href="#projects" className="hero-cta">
+              Projects
+            </a>
+            <a href="#mybook" className="hero-cta secondary">
+              My Book
+            </a>
+            <a href="#pictures" className="hero-cta secondary">
+              Gallery
+            </a>
+          </div>
         </div>
       </section>
 
@@ -62,10 +69,16 @@ function App() {
         </div>
       </section>
 
+      {/* Book Section */}
+      <BookSection />
+
+      {/* Gallery Section */}
+      <GallerySection />
+
       {/* Footer */}
       <footer className="footer">
         <div className="footer-content">
-          <p>&copy; 2025 MyWorld. Built with passion and code.</p>
+          <p>&copy; 2025 OurWorld. Built with passion and code.</p>
           <div className="footer-links">
             <a href="https://nepalboy.github.io/Travelnew/#/" target="_blank" rel="noopener noreferrer" className="footer-link">
               Travel Blog
