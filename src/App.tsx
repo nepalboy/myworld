@@ -91,9 +91,8 @@ function HomePage() {
     <>
       <section className="hero">
         <div className="hero-content">
-          <h2 className="hero-title">Welcome</h2>
           <p className="hero-tagline">
-            Thank you for being here and being part of my journey
+            Welcome, thank you for being here and being part of my journey
           </p>
         </div>
       </section>
