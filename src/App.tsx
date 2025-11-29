@@ -13,8 +13,8 @@ function App() {
           <div className="nav-content">
             <h1 className="nav-logo">OurWorld</h1>
             <div className="nav-links">
-              <Link to="/" className="nav-link">Home</Link>
-              <Link to="/collections" className="nav-link">My Collections</Link>
+              <Link to="/" className="nav-link mobile-hide">Home</Link>
+              <Link to="/collections" className="nav-link"><span className="mobile-hide">My </span>Collections</Link>
               <Link to="/about" className="nav-link">About</Link>
             </div>
             <img src="/avatar.jpg" alt="Profile" className="nav-avatar" />
