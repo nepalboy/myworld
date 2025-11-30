@@ -32,7 +32,7 @@ function App() {
         <footer className="footer">
           <div className="footer-content">
             <p>&copy; 2025 OurWorld. Built with passion, love and empathy.</p>
-            <p className="footer-meta">Last updated: 2:30 PM, November 29, 2025 | San Diego | Version 1.0</p>
+            <p className="footer-meta">Last updated: 10:06 AM, November 30, 2025 | San Diego | Version 2.0</p>
             <div className="footer-links">
               <a href="https://nepalboy.github.io/Travelnew/#/" target="_blank" rel="noopener noreferrer" className="footer-link">
                 Travel Blog
