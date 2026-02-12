@@ -104,7 +104,7 @@
   align-items: center;
   justify-content: flex-start;
   text-align: left;
-  padding: 0 var(--spacing-lg);
+  padding: 0 var(--spacing-lg) 0 var(--spacing-lg);
   margin-top: 80px;
   background: var(--gradient-dark);
   overflow: hidden;
@@ -222,13 +222,14 @@
 /* Projects Section */
 .projects-section {
   padding: 0 var(--spacing-lg) var(--spacing-md) var(--spacing-lg);
-  margin-top: -80px;
+  margin-top: -120px;
   background: var(--background);
 }
 
 .section-header {
   text-align: center;
-  margin-bottom: var(--spacing-2xl);
+  margin: 0 0 var(--spacing-xl) 0;
+  padding: 0;
 }
 
 .section-title {
