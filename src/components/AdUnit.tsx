@@ -21,7 +21,7 @@ const AdUnit = ({ slot, format = 'auto', responsive = 'true', style }: AdUnitPro
     }, []);
 
     return (
-        <div style={{ margin: '10px 0', textAlign: 'center', ...style }}>
+        <div style={{ margin: '5px 0', textAlign: 'center', ...style }}>
             <ins
                 className="adsbygoogle"
                 style={{ display: 'block' }}
