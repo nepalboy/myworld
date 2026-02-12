@@ -3,6 +3,7 @@ import './App.css';
 import ProjectCard from './components/ProjectCard';
 import About from './components/About';
 import GallerySection from './components/GallerySection';
+import AdUnit from './components/AdUnit';
 
 function App() {
   return (
@@ -98,6 +99,8 @@ function HomePage() {
         </div>
       </section>
 
+      <AdUnit slot="home-top-ad" />
+
       <section id="projects" className="projects-section">
         <div className="section-header">
           <h2 className="section-title">My Collections</h2>
@@ -168,6 +171,9 @@ function CollectionsPage() {
           A showcase of my passions - travel, security, photography, and storytelling
         </p>
       </div>
+
+      <AdUnit slot="collections-top-ad" />
+
       <div className="projects-grid">
         {projects.map((project, index) => (
           <ProjectCard
