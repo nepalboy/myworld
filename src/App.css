@@ -221,7 +221,7 @@
 
 /* Projects Section */
 .projects-section {
-  padding: var(--spacing-md) var(--spacing-lg);
+  padding: var(--spacing-xs) var(--spacing-lg);
   background: var(--background);
 }
 

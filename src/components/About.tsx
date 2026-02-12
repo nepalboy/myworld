@@ -1,3 +1,4 @@
+import AdUnit from './AdUnit';
 import './About.css';
 
 const About = () => {
@@ -41,6 +42,8 @@ const About = () => {
                         <p className="company">Nepalese Army</p>
                         <p className="duration">8+ years of service</p>
                     </div>
+
+                    <AdUnit slot="about-page-ad" />
 
                     <div className="about-links">
                         <a

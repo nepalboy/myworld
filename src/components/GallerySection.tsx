@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import AdUnit from './AdUnit';
 import './GallerySection.css';
 
 type Category = 'All' | 'Food' | 'Places' | 'Activities';
@@ -48,6 +49,8 @@ const GallerySection = () => {
                     </button>
                 ))}
             </div>
+
+            <AdUnit slot="gallery-page-ad" />
 
             <div className="gallery-grid">
                 {filteredItems.map((item) => (
