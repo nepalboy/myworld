@@ -80,6 +80,14 @@ function HomePage() {
       image: '/images/Nepal_Trolleybus_Tripureswore_1985.jpg'
     },
     {
+      title: 'San Diego Soccer',
+      description: 'Exploring the vibrant soccer culture and activities in San Diego. From local matches to community events, stay connected with the beautiful game.',
+      tags: ['Soccer', 'Sports', 'San Diego', 'Community'],
+      url: 'https://soccer.nepaliboy.com/',
+      icon: '⚽',
+      image: '/images/soccer-preview.png'
+    },
+    {
       title: 'The Hope',
       description: 'A memoir from the Foothills of the Himalayas. The story of war, mood disorder, education, immigration, and hopes - from Nepal to the United States of America.',
       tags: ['Book', 'Memoir', 'Nepal', 'Immigration'],
@@ -152,6 +160,14 @@ function CollectionsPage() {
       url: '#/gallery',
       icon: '📸',
       image: '/images/Nepal_Trolleybus_Tripureswore_1985.jpg'
+    },
+    {
+      title: 'San Diego Soccer',
+      description: 'Exploring the vibrant soccer culture and activities in San Diego. From local matches to community events, stay connected with the beautiful game.',
+      tags: ['Soccer', 'Sports', 'San Diego', 'Community'],
+      url: 'https://soccer.nepaliboy.com/',
+      icon: '⚽',
+      image: '/images/soccer-preview.png'
     },
     {
       title: 'The Hope',
