@@ -94,7 +94,15 @@ function HomePage() {
       url: 'https://www.amazon.com/Hope-Foothills-Himalayas-education-immigration/dp/1801287775',
       icon: '📖',
       image: '/book-cover.jpg'
-    }
+    },
+    {
+      title: 'My Muse Everest',
+      description: 'Say hello to Everest, my personal Muse. More coming soon at ilovemuse.blog.',
+      tags: ['AI', 'Muse', 'Assistant'],
+      url: 'https://ilovemuse.blog/',
+      icon: '🏔️',
+      image: '/avatar.jpg'
+    },
   ];
 
   return (
@@ -176,7 +184,15 @@ function CollectionsPage() {
       url: 'https://www.amazon.com/Hope-Foothills-Himalayas-education-immigration/dp/1801287775',
       icon: '📖',
       image: '/book-cover.jpg'
-    }
+    },
+    {
+      title: 'My Muse Everest',
+      description: 'Say hello to Everest, my personal Muse. More coming soon at ilovemuse.blog.',
+      tags: ['AI', 'Muse', 'Assistant'],
+      url: 'https://ilovemuse.blog/',
+      icon: '🏔️',
+      image: '/avatar.jpg'
+    },
   ];
 
   return (
