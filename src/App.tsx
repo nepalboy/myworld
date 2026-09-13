@@ -101,7 +101,7 @@ function HomePage() {
       tags: ['AI', 'Muse', 'Assistant'],
       url: 'https://ilovemuse.blog/',
       icon: '🏔️',
-      image: '/avatar.jpg'
+      image: '/everest-avatar.jpg'
     },
   ];
 
@@ -191,7 +191,7 @@ function CollectionsPage() {
       tags: ['AI', 'Muse', 'Assistant'],
       url: 'https://ilovemuse.blog/',
       icon: '🏔️',
-      image: '/avatar.jpg'
+      image: '/everest-avatar.jpg'
     },
   ];
 
