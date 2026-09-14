@@ -13,8 +13,8 @@
   z-index: 1000;
   background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.95) 100%);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(139, 92, 246, 0.2);
-  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid rgba(34, 211, 238, 0.2);
+  padding: var(--spacing-xs) 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -28,7 +28,7 @@
 }
 
 .nav-logo {
-  font-size: 1.75rem;
+  font-size: 1.4rem;
   font-weight: 800;
   background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
   -webkit-background-clip: text;
@@ -36,7 +36,7 @@
   background-clip: text;
   margin: 0;
   letter-spacing: -0.02em;
-  text-shadow: 0 0 30px rgba(139, 92, 246, 0.3);
+  text-shadow: 0 0 30px rgba(34, 211, 238, 0.3);
 }
 
 .nav-links {
@@ -71,7 +71,7 @@
 
 .nav-link:hover {
   color: var(--white);
-  background: rgba(139, 92, 246, 0.1);
+  background: rgba(34, 211, 238, 0.1);
 }
 
 .nav-link:hover::before {
@@ -79,21 +79,21 @@
 }
 
 .nav-avatar {
-  width: 45px;
-  height: 45px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid transparent;
   background: linear-gradient(white, white) padding-box,
     linear-gradient(135deg, var(--primary), var(--secondary)) border-box;
-  box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.4);
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .nav-avatar:hover {
   transform: scale(1.1) rotate(5deg);
-  box-shadow: 0 0 30px rgba(139, 92, 246, 0.6);
+  box-shadow: 0 0 30px rgba(34, 211, 238, 0.6);
 }
 
 /* Hero Section */
@@ -104,8 +104,8 @@
   align-items: center;
   justify-content: flex-start;
   text-align: left;
-  padding: 0 var(--spacing-lg) 0 var(--spacing-lg);
-  margin-top: 80px;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  margin-top: 62px;
   background: var(--gradient-dark);
   overflow: hidden;
 }
@@ -118,8 +118,8 @@
   right: 0;
   bottom: 0;
   background:
-    radial-gradient(circle at 20% 50%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 50%, rgba(236, 72, 153, 0.1) 0%, transparent 50%);
+    radial-gradient(circle at 20% 50%, rgba(34, 211, 238, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(96, 165, 250, 0.1) 0%, transparent 50%);
   animation: pulse 8s ease-in-out infinite;
 }
 
@@ -221,19 +221,19 @@
 
 /* Projects Section */
 .projects-section {
-  padding: 0 var(--spacing-lg) var(--spacing-md) var(--spacing-lg);
-  margin-top: -120px;
+  padding: 0 var(--spacing-lg) var(--spacing-sm) var(--spacing-lg);
+  margin-top: 0;
   background: var(--background);
 }
 
 .section-header {
   text-align: center;
-  margin: 0 0 var(--spacing-xl) 0;
+  margin: 0 0 var(--spacing-lg) 0;
   padding: 0;
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin-bottom: var(--spacing-sm);
   background: linear-gradient(to right, var(--white), var(--primary));
   -webkit-background-clip: text;
@@ -242,24 +242,24 @@
 }
 
 .section-subtitle {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--text-secondary);
   margin-bottom: var(--spacing-sm);
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: var(--spacing-xl);
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+  max-width: 1280px;
   margin: 0 auto;
 }
 
 /* Footer */
 .footer {
   background: linear-gradient(to top, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.8));
-  border-top: 1px solid rgba(139, 92, 246, 0.2);
-  padding: var(--spacing-md) var(--spacing-lg);
+  border-top: 1px solid rgba(34, 211, 238, 0.2);
+  padding: var(--spacing-sm) var(--spacing-lg);
   margin-top: auto;
 }
 
@@ -329,7 +329,7 @@
   }
 
   .hero {
-    margin-top: 80px;
+    margin-top: 62px;
     padding: var(--spacing-xs) var(--spacing-md);
     min-height: auto;
     text-align: left;
@@ -358,7 +358,7 @@
 
   .projects-grid {
     grid-template-columns: 1fr;
-    gap: var(--spacing-lg);
+    gap: var(--spacing-md);
   }
 
   .footer {
@@ -381,5 +381,5 @@
   font-size: 0.75rem !important;
   color: var(--text-secondary);
   opacity: 0.7;
-  margin-top: var(--spacing-xs) !important;
+  margin-top: 0 !important;
 }
