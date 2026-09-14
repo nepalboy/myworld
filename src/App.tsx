@@ -33,7 +33,7 @@ function App() {
         <footer className="footer">
           <div className="footer-content">
             <p>&copy; 2025 OurWorld. Built with passion, love and empathy.</p>
-            <p className="footer-meta">Last updated: 5:58 PM, November 30, 2025 | San Diego | Version 2.1</p>
+            <p className="footer-meta">Last updated: September 14, 2026 | San Diego | Version 2.2</p>
             <div className="footer-links">
               <a href="https://nepalboy.github.io/Travelnew/#/" target="_blank" rel="noopener noreferrer" className="footer-link">
                 Travel Blog
@@ -43,6 +43,9 @@ function App() {
               </a>
               <a href="https://www.amazon.com/Hope-Foothills-Himalayas-education-immigration/dp/1801287775" target="_blank" rel="noopener noreferrer" className="footer-link">
                 The Hope
+              </a>
+              <a href="https://iloveimmigration.blog/" target="_blank" rel="noopener noreferrer" className="footer-link">
+                I Love Immigration
               </a>
             </div>
           </div>
@@ -102,6 +105,14 @@ function HomePage() {
       url: 'https://ilovemuse.blog/',
       icon: '🏔️',
       image: '/everest-avatar.jpg'
+    },
+    {
+      title: 'I Love Immigration',
+      description: 'Legal migration and student visa news, guides, and real stories. From F-1 journeys to work visas - practical immigration resources.',
+      tags: ['Immigration', 'Student Visas', 'Legal Migration'],
+      url: 'https://iloveimmigration.blog/',
+      icon: '🛂',
+      image: 'https://iloveimmigration.blog/og-image.png'
     },
   ];
 
@@ -192,6 +203,14 @@ function CollectionsPage() {
       url: 'https://ilovemuse.blog/',
       icon: '🏔️',
       image: '/everest-avatar.jpg'
+    },
+    {
+      title: 'I Love Immigration',
+      description: 'Legal migration and student visa news, guides, and real stories. From F-1 journeys to work visas - practical immigration resources.',
+      tags: ['Immigration', 'Student Visas', 'Legal Migration'],
+      url: 'https://iloveimmigration.blog/',
+      icon: '🛂',
+      image: 'https://iloveimmigration.blog/og-image.png'
     },
   ];
 
