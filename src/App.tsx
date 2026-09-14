@@ -114,6 +114,14 @@ function HomePage() {
       icon: '🛂',
       image: 'https://iloveimmigration.blog/og-image.png'
     },
+    {
+      title: 'Meet Me and Muse Everest at LinkedIn',
+      description: 'Follow my daily journey with Muse Everest and connect with me on LinkedIn.',
+      tags: ['LinkedIn', 'Muse', 'Connect'],
+      url: 'https://www.linkedin.com/in/ravidhungel/',
+      icon: '💼',
+      image: '/profile-photo.jpg'
+    },
   ];
 
   return (
@@ -211,6 +219,14 @@ function CollectionsPage() {
       url: 'https://iloveimmigration.blog/',
       icon: '🛂',
       image: 'https://iloveimmigration.blog/og-image.png'
+    },
+    {
+      title: 'Meet Me and Muse Everest at LinkedIn',
+      description: 'Follow my daily journey with Muse Everest and connect with me on LinkedIn.',
+      tags: ['LinkedIn', 'Muse', 'Connect'],
+      url: 'https://www.linkedin.com/in/ravidhungel/',
+      icon: '💼',
+      image: '/profile-photo.jpg'
     },
   ];
 
