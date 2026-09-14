@@ -126,8 +126,6 @@ function HomePage() {
         </div>
       </section>
 
-      <AdUnit slot="home-top-ad" />
-
       <section id="projects" className="projects-section">
         <div className="section-header">
           <h2 className="section-title">My Collections</h2>
@@ -149,6 +147,8 @@ function HomePage() {
           ))}
         </div>
       </section>
+
+      <AdUnit slot="home-top-ad" />
     </>
   );
 }
@@ -223,8 +223,6 @@ function CollectionsPage() {
         </p>
       </div>
 
-      <AdUnit slot="collections-top-ad" />
-
       <div className="projects-grid">
         {projects.map((project, index) => (
           <ProjectCard
@@ -238,6 +236,8 @@ function CollectionsPage() {
           />
         ))}
       </div>
+
+      <AdUnit slot="collections-top-ad" />
     </section>
   );
 }
