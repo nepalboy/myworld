@@ -4,6 +4,7 @@ import ProjectCard from './components/ProjectCard';
 import About from './components/About';
 import GallerySection from './components/GallerySection';
 import AdUnit from './components/AdUnit';
+import { projects, latestStories } from './data/projects';
 
 function App() {
   return (
@@ -32,8 +33,8 @@ function App() {
         {/* Footer */}
         <footer className="footer">
           <div className="footer-content">
-            <p>&copy; 2025 OurWorld. Built with passion, love and empathy.</p>
-            <p className="footer-meta">Last updated: September 14, 2026 | San Diego | Version 2.2</p>
+            <p>&copy; 2026 Nepaliboy.com — Ravi Dhungel. Stories on Nepal travel, Himalayan trekking, medical device cybersecurity, photography, immigration, and San Diego life.</p>
+            <p className="footer-meta">Last updated: October 2026 | San Diego</p>
             <div className="footer-links">
               <a href="https://nepalboy.github.io/Travelnew/#/" target="_blank" rel="noopener noreferrer" className="footer-link">
                 Travel Blog
@@ -57,80 +58,33 @@ function App() {
 
 // Home Page
 function HomePage() {
-  const projects = [
-    {
-      title: 'Traversing With Time',
-      description: 'A personal travel blog featuring adventures from around the world. Explore stories from concerts, high-altitude hikes, and diverse cultural experiences across continents.',
-      tags: ['Travel', 'Blog', 'Adventures', 'Photography'],
-      url: 'https://nepalboy.github.io/Travelnew/#/',
-      icon: '🌍',
-      image: 'https://lh7-rt.googleusercontent.com/docsz/AD_4nXcOdgrNratZDgXqn6MfCsMopcCNVsJOISnfijo7MV1IMK6OFXACj32egHGEjj9xZbeKN0soMPUliFG9n47Q733WHO-55ARytS0rJ7HiHwyo50QkUXVrVanNl90Uxp81FyG8KK3LbA?key=RG9KWpZ8wPjWWIcXoGdZIEc4'
-    },
-    {
-      title: 'MedicSec',
-      description: 'A comprehensive platform for building safe and secure medical devices. Integrating processes, people, and technologies to ensure the highest standards of medical device security and safety.',
-      tags: ['Medical Devices', 'Security', 'Safety', 'Risk Management'],
-      url: 'https://www.medicsec.com/',
-      icon: '🔒',
-      image: '/medicsec-preview.png'
-    },
-    {
-      title: 'Picture Speaks',
-      description: 'A curated collection of moments frozen in time. Explore 40+ photos from my adventures - from the peaks of Kilimanjaro to the streets of Nepal, featuring food, places, and thrilling activities.',
-      tags: ['Photography', 'Gallery', 'Travel', 'Memories'],
-      url: '#/gallery',
-      icon: '📸',
-      image: '/images/Nepal_Trolleybus_Tripureswore_1985.jpg'
-    },
-    {
-      title: 'San Diego Soccer',
-      description: 'Exploring the vibrant soccer culture and activities in San Diego. From local matches to community events, stay connected with the beautiful game.',
-      tags: ['Soccer', 'Sports', 'San Diego', 'Community'],
-      url: 'https://soccer.nepaliboy.com/',
-      icon: '⚽',
-      image: '/images/soccer-preview.png'
-    },
-    {
-      title: 'The Hope',
-      description: 'A memoir from the Foothills of the Himalayas. The story of war, mood disorder, education, immigration, and hopes - from Nepal to the United States of America.',
-      tags: ['Book', 'Memoir', 'Nepal', 'Immigration'],
-      url: 'https://www.amazon.com/Hope-Foothills-Himalayas-education-immigration/dp/1801287775',
-      icon: '📖',
-      image: '/book-cover.jpg'
-    },
-    {
-      title: 'My Muse Everest',
-      description: 'Say hello to Everest, my personal Muse. More coming soon at ilovemuse.blog.',
-      tags: ['AI', 'Muse', 'Assistant'],
-      url: 'https://ilovemuse.blog/',
-      icon: '🏔️',
-      image: '/everest-avatar.jpg'
-    },
-    {
-      title: 'I Love Immigration',
-      description: 'Legal migration and student visa news, guides, and real stories. From F-1 journeys to work visas - practical immigration resources.',
-      tags: ['Immigration', 'Student Visas', 'Legal Migration'],
-      url: 'https://iloveimmigration.blog/',
-      icon: '🛂',
-      image: 'https://iloveimmigration.blog/og-image.png'
-    },
-    {
-      title: 'Meet Me and Muse Everest at LinkedIn',
-      description: 'Follow my daily journey with Muse Everest and connect with me on LinkedIn.',
-      tags: ['LinkedIn', 'Muse', 'Connect'],
-      url: 'https://www.linkedin.com/in/ravidhungel/',
-      icon: '💼',
-      image: '/profile-photo.jpg'
-    },
-  ];
-
   return (
     <>
       <section className="hero">
         <div className="hero-content">
-          <p className="hero-tagline">
-            <strong className="welcome-word">Welcome,</strong> thank you for being here and being part of my journey
-          </p>
+          <h1 className="hero-title">Welcome to Nepaliboy.com — Stories from Nepal to San Diego</h1>
+          <p className="hero-sub">From the Foothills of the Himalayas to the Coast of California</p>
+          <div className="hero-intro">
+            <p>
+              I&apos;m Ravi Dhungel, a cybersecurity and safety engineer working in the medical device
+              industry in San Diego, California. I was born and raised in Nepal, in the foothills of
+              the Himalayas, and my journey — through war, education, immigration, and eventually to
+              the United States — shaped everything I write about here.
+            </p>
+            <p>
+              Nepaliboy.com is my corner of the internet: a collection of the things I love.
+              You&apos;ll find travel stories from high-altitude treks like Everest Base Camp and
+              Mount Kilimanjaro, practical writing on medical device security and safety, photography
+              from my adventures across continents, reflections on immigration and the student-visa
+              journey, and notes on soccer culture in San Diego.
+            </p>
+            <p>
+              Everything here is written from personal experience — the trails I&apos;ve hiked, the
+              systems I&apos;ve helped secure, the photos I&apos;ve taken, and the road I traveled
+              from Nepal to America. I hope something here is useful, interesting, or at least worth
+              your time.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -156,6 +110,43 @@ function HomePage() {
         </div>
       </section>
 
+      <section className="stories-section">
+        <div className="section-header">
+          <h2 className="section-title">Latest Stories</h2>
+          <p className="section-subtitle">
+            Recent writing from the travel blog — hikes, treks, and trail notes
+          </p>
+        </div>
+        <div className="stories-grid">
+          {latestStories.map((story, index) => (
+            <a
+              key={index}
+              href={story.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="story-card"
+            >
+              <h3 className="story-title">{story.title}</h3>
+              <p className="story-description">{story.description}</p>
+              <span className="story-link">Read the story →</span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section className="about-teaser">
+        <div className="section-header">
+          <h2 className="section-title">About Me</h2>
+        </div>
+        <p className="about-teaser-text">
+          I grew up in Nepal during a difficult decade of conflict, earned my education against long
+          odds, and eventually immigrated to the United States — a story I tell in full in my memoir,{' '}
+          <em>The Hope</em>. Today I work as a cybersecurity and safety engineer focused on medical
+          devices, and I spend my free time hiking, photographing, and following San Diego soccer.{' '}
+          <Link to="/about" className="about-teaser-link">Read more about me →</Link>
+        </p>
+      </section>
+
       <AdUnit slot="home-top-ad" />
     </>
   );
@@ -163,73 +154,6 @@ function HomePage() {
 
 // Collections Page
 function CollectionsPage() {
-  const projects = [
-    {
-      title: 'Traversing With Time',
-      description: 'A personal travel blog featuring adventures from around the world. Explore stories from concerts, high-altitude hikes, and diverse cultural experiences across continents.',
-      tags: ['Travel', 'Blog', 'Adventures', 'Photography'],
-      url: 'https://nepalboy.github.io/Travelnew/#/',
-      icon: '🌍',
-      image: 'https://lh7-rt.googleusercontent.com/docsz/AD_4nXcOdgrNratZDgXqn6MfCsMopcCNVsJOISnfijo7MV1IMK6OFXACj32egHGEjj9xZbeKN0soMPUliFG9n47Q733WHO-55ARytS0rJ7HiHwyo50QkUXVrVanNl90Uxp81FyG8KK3LbA?key=RG9KWpZ8wPjWWIcXoGdZIEc4'
-    },
-    {
-      title: 'MedicSec',
-      description: 'A comprehensive platform for building safe and secure medical devices. Integrating processes, people, and technologies to ensure the highest standards of medical device security and safety.',
-      tags: ['Medical Devices', 'Security', 'Safety', 'Risk Management'],
-      url: 'https://www.medicsec.com/',
-      icon: '🔒',
-      image: '/medicsec-preview.png'
-    },
-    {
-      title: 'Picture Speaks',
-      description: 'A curated collection of moments frozen in time. Explore 40+ photos from my adventures - from the peaks of Kilimanjaro to the streets of Nepal, featuring food, places, and thrilling activities.',
-      tags: ['Photography', 'Gallery', 'Travel', 'Memories'],
-      url: '#/gallery',
-      icon: '📸',
-      image: '/images/Nepal_Trolleybus_Tripureswore_1985.jpg'
-    },
-    {
-      title: 'San Diego Soccer',
-      description: 'Exploring the vibrant soccer culture and activities in San Diego. From local matches to community events, stay connected with the beautiful game.',
-      tags: ['Soccer', 'Sports', 'San Diego', 'Community'],
-      url: 'https://soccer.nepaliboy.com/',
-      icon: '⚽',
-      image: '/images/soccer-preview.png'
-    },
-    {
-      title: 'The Hope',
-      description: 'A memoir from the Foothills of the Himalayas. The story of war, mood disorder, education, immigration, and hopes - from Nepal to the United States of America.',
-      tags: ['Book', 'Memoir', 'Nepal', 'Immigration'],
-      url: 'https://www.amazon.com/Hope-Foothills-Himalayas-education-immigration/dp/1801287775',
-      icon: '📖',
-      image: '/book-cover.jpg'
-    },
-    {
-      title: 'My Muse Everest',
-      description: 'Say hello to Everest, my personal Muse. More coming soon at ilovemuse.blog.',
-      tags: ['AI', 'Muse', 'Assistant'],
-      url: 'https://ilovemuse.blog/',
-      icon: '🏔️',
-      image: '/everest-avatar.jpg'
-    },
-    {
-      title: 'I Love Immigration',
-      description: 'Legal migration and student visa news, guides, and real stories. From F-1 journeys to work visas - practical immigration resources.',
-      tags: ['Immigration', 'Student Visas', 'Legal Migration'],
-      url: 'https://iloveimmigration.blog/',
-      icon: '🛂',
-      image: 'https://iloveimmigration.blog/og-image.png'
-    },
-    {
-      title: 'Meet Me and Muse Everest at LinkedIn',
-      description: 'Follow my daily journey with Muse Everest and connect with me on LinkedIn.',
-      tags: ['LinkedIn', 'Muse', 'Connect'],
-      url: 'https://www.linkedin.com/in/ravidhungel/',
-      icon: '💼',
-      image: '/profile-photo.jpg'
-    },
-  ];
-
   return (
     <section id="projects" className="projects-section">
       <div className="section-header">
