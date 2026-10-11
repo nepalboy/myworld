@@ -62,51 +62,8 @@ function HomePage() {
     <>
       <section className="hero">
         <div className="hero-content">
-          <h1 className="hero-title">Welcome to Nepaliboy.com — Stories from Nepal to San Diego</h1>
+          <h1 className="hero-title">Welcome to Nepaliboy.com</h1>
           <p className="hero-sub">From the Foothills of the Himalayas to the Coast of California</p>
-          <div className="hero-intro">
-            <p>
-              I&apos;m Ravi Dhungel, a cybersecurity and safety engineer working in the medical device
-              industry in San Diego, California. I was born and raised in Nepal, in the foothills of
-              the Himalayas, and my journey — through war, education, immigration, and eventually to
-              the United States — shaped everything I write about here.
-            </p>
-            <p>
-              Nepaliboy.com is my corner of the internet: a collection of the things I love.
-              You&apos;ll find travel stories from high-altitude treks like Everest Base Camp and
-              Mount Kilimanjaro, practical writing on medical device security and safety, photography
-              from my adventures across continents, reflections on immigration and the student-visa
-              journey, and notes on soccer culture in San Diego.
-            </p>
-            <p>
-              Everything here is written from personal experience — the trails I&apos;ve hiked, the
-              systems I&apos;ve helped secure, the photos I&apos;ve taken, and the road I traveled
-              from Nepal to America. I hope something here is useful, interesting, or at least worth
-              your time.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" className="projects-section">
-        <div className="section-header">
-          <h2 className="section-title">My Collections</h2>
-          <p className="section-subtitle">
-            A showcase of my passions - travel, security, photography, and storytelling
-          </p>
-        </div>
-        <div className="projects-grid">
-          {projects.map((project, index) => (
-            <ProjectCard
-              key={index}
-              title={project.title}
-              description={project.description}
-              tags={project.tags}
-              url={project.url}
-              icon={project.icon}
-              image={project.image}
-            />
-          ))}
         </div>
       </section>
 
@@ -134,17 +91,26 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="about-teaser">
+      <section id="projects" className="projects-section">
         <div className="section-header">
-          <h2 className="section-title">About Me</h2>
+          <h2 className="section-title">My Collections</h2>
+          <p className="section-subtitle">
+            A showcase of my passions - travel, security, photography, and storytelling
+          </p>
         </div>
-        <p className="about-teaser-text">
-          I grew up in Nepal during a difficult decade of conflict, earned my education against long
-          odds, and eventually immigrated to the United States — a story I tell in full in my memoir,{' '}
-          <em>The Hope</em>. Today I work as a cybersecurity and safety engineer focused on medical
-          devices, and I spend my free time hiking, photographing, and following San Diego soccer.{' '}
-          <Link to="/about" className="about-teaser-link">Read more about me →</Link>
-        </p>
+        <div className="projects-grid">
+          {projects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              title={project.title}
+              description={project.description}
+              tags={project.tags}
+              url={project.url}
+              icon={project.icon}
+              image={project.image}
+            />
+          ))}
+        </div>
       </section>
 
       <AdUnit slot="home-top-ad" />
