@@ -83,6 +83,7 @@ function HomePage() {
               rel="noopener noreferrer"
               className="story-card"
             >
+              <img src={story.image} alt={story.title} className="story-image" loading="lazy" />
               <h3 className="story-title">{story.title}</h3>
               <p className="story-description">{story.description}</p>
               <span className="story-link">Read the story →</span>

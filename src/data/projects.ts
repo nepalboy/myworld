@@ -87,6 +87,7 @@ export interface Story {
   title: string;
   description: string;
   url: string;
+  image: string;
 }
 
 export const latestStories: Story[] = [
@@ -94,18 +95,21 @@ export const latestStories: Story[] = [
     title: 'The Most Beautiful Scenic Hike of San Diego: Torrey Pines',
     description:
       'Torrey Pines State Natural Reserve has some of the most dramatic coastal scenery in Southern California — sandstone cliffs, rare Torrey pine trees, and sweeping views of the Pacific. My photo walk through the reserve, with trail notes and the best overlooks.',
-    url: 'https://nepalboy.github.io/Travelnew/#/',
+    url: 'https://nepalboy.github.io/Travelnew/#/post/torrey-pines-scenic-hike',
+    image: 'https://nepalboy.github.io/Travelnew/images/torrey-pines/torrey-cover.jpg',
   },
   {
     title: 'Exploring South and North Fortuna: Jewels of Mission Trails',
     description:
       "Mission Trails Regional Park is San Diego's backyard wilderness, and the twin peaks of South and North Fortuna are its best half-day hike. Trailhead directions, elevation profiles, and photos from a weekend traverse of both summits.",
-    url: 'https://nepalboy.github.io/Travelnew/#/',
+    url: 'https://nepalboy.github.io/Travelnew/#/post/north-south-fortuna-mission-trails',
+    image: 'https://nepalboy.github.io/Travelnew/images/fortuna/fortuna-cover.jpg',
   },
   {
     title: 'To Everest Base Camp and Back',
     description:
       "The trek to Everest Base Camp (5,364m) is the hardest and most rewarding thing I've done on foot: Lukla's mountain airstrip, Namche Bazaar's teahouses, and sunrise over the Khumbu Icefall. My full day-by-day account, with packing lessons for high-altitude trekking in Nepal.",
-    url: 'https://nepalboy.github.io/Travelnew/#/',
+    url: 'https://nepalboy.github.io/Travelnew/#/post/hiking-to-everest-base-camp',
+    image: 'https://nepalboy.github.io/Travelnew/images/blogspot/blogspot_b2260118228568a9.jpeg',
   },
 ];

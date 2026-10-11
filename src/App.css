@@ -420,6 +420,15 @@
   box-shadow: var(--shadow-glow);
 }
 
+.story-image {
+  width: calc(100% + var(--spacing-md) * 2);
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  margin: calc(var(--spacing-md) * -1) calc(var(--spacing-md) * -1) var(--spacing-sm) calc(var(--spacing-md) * -1);
+}
+
 .story-title {
   font-size: 1.1rem;
   font-weight: 700;
