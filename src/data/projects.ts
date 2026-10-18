@@ -94,7 +94,7 @@ export const latestStories: Story[] = [
   {
     title: 'Hiking Cowles Mountain in Dashain - Oct 2026',
     description:
-      "San Diego's most popular hike on a crystal-clear October morning: a full parking lot by 7 AM, the 1,591-foot summit — the highest point in the city — and 360-degree views from the ocean to the eastern mountains.",
+      "San Diego's most popular hike on a crystal-clear October morning: a full parking lot by 8 AM, the 1,591-foot summit — the highest point in the city — and 360-degree views from the ocean to the eastern mountains.",
     url: 'https://nepalboy.github.io/Travelnew/#/post/cowles-mountain-sunrise-hike',
     image: 'https://nepalboy.github.io/Travelnew/images/cowles/cowles-01.jpg',
   },
